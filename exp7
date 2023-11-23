@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  
+  }
+h2 {
+   color: white;
+   }
+
+
+</head>
+</style>
+<body bgcolor="grey">
+<h1><u><center>STRING FUNCTIONS & MATH FUNCTIONS</center></u></h1>
+<script>
+document.write("<b><h2><u>String Functions</u></b></h2><br>")
+var a="YADU";
+var b="KRISHNAN";
+var c="first JavaScript program";
+document.write("STRING 1=",a,"<br>");
+document.write("STRING 2=",b,"<br>");
+document.write("STRING 3=",c,"<br>");
+document.write("<br>Length of the 3rd STRING =<b>",c.length,"</b><br><br>");
+document.write("Substring of given string 3=<b>",c.slice(0,7),"</b><br><br>");
+document.write("Substring using subtr()=<b>",c.substr(3,18),"</b><br><br>");
+document.write("concatenation(string1 & string2)=<b>",a.concat(" ",b,"</b><br><br>"));
+document.write("Replace string 3=<b>",c.replace("JavaScript","HTML"),"</b><br><br>");
+document.write("Uppercase string 3=<b>",c.toUpperCase(),"</b><br><br>");
+document.write("Lowercase string 2=<b>",b.toLowerCase(),"</b><br><br>");
+document.write("Index of(<u>JavaScript</u>)=<b>",c.indexOf("JavaScript"),"</b><br><br>");
+document.write("Last index of program=<b>",c.lastIndexOf("program"),"</b><br><br>");
+document.write("Character at positon 5 of string 3=<b>",c.charAt(6),"</b><br><br>");
+document.write("<br><br>");
+document.write("<b><h2><u>Math Functions</u></h2></b>","<br>")
+var a=248.8;
+document.write("Number=<b>",a,"</b><br>");
+document.write("<br>")
+document.write("Square root=<b>",Math.sqrt(a),"</b><br><br>");
+document.write("power to 4=<b>",Math.pow(a,4),"</b><br><br>");
+document.write("Absolute value=<b>",Math.abs(a),"</b><br><br>");
+document.write("Round value=<b>",Math.round(a),"</b><br><br>");
+document.write("ceil value=<b>",Math.ceil(a),"</b><br><br>");
+document.write("Floor value=<b>",Math.floor(a),"</b><br><br>");
+document.write("Pi value=<b>",Math.PI,"</b><br><br>");
+document.write("Max value in(6,7,8)=<b>",Math.max(6,7,8),"</b><br><br>");
+document.write("Min value in(6,7,8)=<b>",Math.min(6,7,8),"</b><br>");
+
+</script>
+</body>
+</html>
