@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>form validation</title>
+</head>
+<script>  
+function validateform(){  
+var name=document.getElementById("fname").value;   
+var password=document.getElementById("pswd").value;  
+var lname=document.form1.lname.value; 
+/*var email=document.getElementById("email").value; */
+var no=document.getElementById("number").value; 
+
+var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+if(document.form1.email.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("Invalid email address.");
+document.form1.text1.focus();
+return false;
+}
+
+
+if (no==null || no==""){  
+  alert("number can't blank");  
+  return false; 
+  }
+    
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+
+else if (lname==null || lname==""){  
+  alert("LastName can't be blank");  
+  return false; 
+  }
+
+/*else if (email==null || email==""){  
+  alert("email can't be blank");  
+  return false; 
+  }*/
+
+
+}
+</script>  
+<body bgcolor="grey">
+<center><h1><font color=red>STUDENT REGISTRATION FORM</font></h1></center><br>
+<form name="form1" method="get" action"url" onsubmit="return validateform()">
+<p><label>Firstname :<input type="text" id="fname"/></label><br></p>
+<p><label>Lastname  :<input type="text" id="lname"/></label><br></p>
+<p><label>Email     :<input type="email" id="email"/></label><br></p>
+<p><label>Mobile    :<input type="tel" id="number"/></label><br></p>
+<p><label>Password  :<input type="password" id="pswd"/></label><br></p>
+<p><label>Address   :<input type="Addressspace" id="add"/></label><br></p>
+<p><label>Nationality :<select>
+<option value="INDIA">INDIA</option>
+<option value="USA">USA</option>
+<option value="ITALY">ITALY</option>
+<option value="FRANCE">FRANCE</option>
+</select></label></p>
+ <label for="birthday">DOB :</label>
+<input type="date" id="birthday" name="birthday"> 
+<p><br>
+Gender<br>
+male<input type="radio" id="male" name="male" value="male">
+female<input type="radio" id="female" name="male" value="male">
+
+
+<P>languages known<p>
+<label>MALAYALAM<input type="checkbox"/></label> 
+<label>ENGLISH<input type="checkbox"/></label> 
+<label>HINDI<input type="checkbox"/></label> 
+<br>
+<p><label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile"> </p>
+
+<button type="submit">
+<i><strong>SUBMIT</strong></i></a>
+</button>
+<button type="reset" value="submit">Reset</button>
+</form>
+
+</body>
+</html>
