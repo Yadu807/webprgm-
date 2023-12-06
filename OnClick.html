@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #04AA6D; /* Green */
+}
+</style>
+<script>
+function random(number){
+  return Math.floor(Math.random() * number ) + 1;
+}
+
+function changeBG() {
+  var bgColor = "rgb("+random(255)+", "+random(255)+", "+random(255)+")";
+  document.body.style.backgroundColor = bgColor;
+   console.log(bgColor);
+}
+
+</script>
+<center><bold>
+<button class="btn btn-primary" id="btn" onClick="changeBG()">Change Background !</button>
+</bold></center>
+</body>
+</html>
