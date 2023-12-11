@@ -7,10 +7,10 @@ function validateform(){
 var name=document.getElementById("fname").value;   
 var password=document.getElementById("pswd").value;  
 var lname=document.form1.lname.value; 
-/*var email=document.getElementById("email").value; */
+var email=document.getElementById("email").value; 
 var no=document.getElementById("number").value; 
 
-var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+/*var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 if(document.form1.email.value.match(mailformat))
 {
 document.form1.text1.focus();
@@ -21,7 +21,7 @@ else
 alert("Invalid email address.");
 document.form1.text1.focus();
 return false;
-}
+}*/
 
 
 if (no==null || no==""){  
@@ -42,10 +42,10 @@ else if (lname==null || lname==""){
   return false; 
   }
 
-/*else if (email==null || email==""){  
+else if (email==null || email==""){  
   alert("email can't be blank");  
   return false; 
-  }*/
+  }
 
 
 }
