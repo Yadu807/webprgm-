@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Exam Form</title>
+<script>
+function exam()
+{
+ var name=document.getElementById("name").value;  
+ if (name==null || name=="") 
+  alert("Name can't be blank");  
+ var m=0;
+ if(document.examForm.one.value=="Object-Based")
+ m=m+1;
+ if(document.examForm.two.value=="immediate if")
+ m=m+1;
+ if(document.examForm.three.value=="Declaration statements")
+ m=m+1;
+ if(document.examForm.four.value=="?")
+ m=m+1;
+ alert("Thankyou  for taking the online exam \n Your score is:"+m+" out of 4");
+}
+</script>
+</head>
+<body bgcolor="grey">
+<form name="examForm" onsubmit="return exam()" method="get">
+<center><h1><u>EXAM FORM</u></h1>
+Enter Your Name:<br><input type="text" name="name" placeholder="Your name" id="name"/><br>
+</center><br><br>
+<p> 1) Which type of JavaScript language is ___<br>
+<input type="radio" name="one" value="Object-Oriented">Object-Oriented<br>
+<input type="radio" name="one" value="Object-Based">Object-Based<br>
+<input type="radio" name="one" value="Assembly-language">Assembly-language<br>
+<input type="radio" name="one" value="High-level">High-level<br>
+</p>
+<p>2)  Which one of the following also known as Conditional Expression: <br>
+<input type="radio" name="two" value="Alternative to if-else">Alternative to if-else<br>
+<input type="radio" name="two" value="Switch statement">Switch statement<br>
+<input type="radio" name="two" value="If-then-else statement">If-then-else statement<br>
+<input type="radio" name="two" value="immediate if">immediate if<br>
+</p>
+<p>
+3) The "function" and " var" are known as:<br>
+<input type="radio" name="three" value="Keywords">Keywords<br>
+<input type="radio" name="three" value="Data types">Data types<br>
+<input type="radio" name="three" value="Declaration statements">Declaration statements<br>
+<input type="radio" name="three" value="Prototypes">Prototypes<br>
+</p>
+<p>
+4) Which one of the following is an ternary operator:<br>
+ <input type="radio" name="four" value="?">?<br>
+<input type="radio" name="four" value=":">:<br>
+<input type="radio" name="four" value="-">-<br>
+<input type="radio" name="four" value="+">+<br>
+</p>
+<p>
+<center>
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+</center>
+</p>
+</body>
+</html>
